@@ -1,4 +1,9 @@
 <?php
+# Este script ajuda a encontrar problemas de fila no Zend-Server.
+# Ele tenta se conectar pela API e, caso obtenha um xml com errorData ou fique
+# muito tempo sem responder, reinicia o serviço. Não encontramos o motivo exato do
+# problema. O serviço não fica parado, nem existe um momento certo em que o erro ocorre.
+# o socket do serviço simplesmente para e ficamos com gargalo em todas nossas Jobs.
 
 function generateRequestSignature($host, $path, $timestamp, $userAgent, $apiKey)
 {
