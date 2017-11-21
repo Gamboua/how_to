@@ -1,4 +1,4 @@
-# XDebug com PHPStorm e php 7.0
+# XDebug com PHPStorm e PHP 7.0
 
 No host da aplicação. Faça a instalação do xdebug:
 ```sh
